@@ -1,0 +1,46 @@
+{
+  "name": "testhapvida",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "docker:build": "docker build -t testhapvida:latest .",
+    "docker:run": "docker run -d -p 8080:80 --name testhapvida testhapvida:latest"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.49.3",
+    "react-router-dom": "^6.21.3",
+    "@tanstack/react-query": "^5.17.19",
+    "@hookform/resolvers": "^3.3.4",
+    "zod": "^3.22.4",
+    "date-fns": "^3.0.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vitest": "^1.2.1",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/jest-dom": "^6.2.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@vitest/ui": "^1.2.1",
+    "@vitest/coverage-v8": "^1.2.1",
+    "jsdom": "^23.2.0"
+  }
+}

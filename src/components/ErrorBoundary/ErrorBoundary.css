@@ -1,0 +1,29 @@
+.error-boundary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.error-boundary__card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 720px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.error-boundary__actions {
+  margin-top: 12px;
+}
+
+.error-boundary button {
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}

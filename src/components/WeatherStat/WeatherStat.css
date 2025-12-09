@@ -1,0 +1,29 @@
+.weather-stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.weather-stat__label {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.weather-stat__icon {
+  display: inline-block;
+  font-size: 1em;
+}
+
+.weather-stat__value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.weather-stat__value--large {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
